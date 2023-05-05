@@ -18,8 +18,8 @@ services:
       - CUSTOM_TRACKER_URL=
       - TZ=Asia/Shanghai
     volumes:
-      - config:/config
-      - downloads:/downloads
+      - -config:/config
+      - -downloads:/downloads
 # If you use host network mode, then no port mapping is required.
 # This is the easiest way to use IPv6 networks.
     network_mode: bridge
@@ -48,5 +48,5 @@ services:
         max-size: 1m
 
 volumes:
-  - config
-  - downloads
+  - -config
+  - -downloads
