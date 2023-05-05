@@ -48,5 +48,5 @@ services:
         max-size: 1m
 
 volumes:
-  - configs
+  - config
   - downloads
