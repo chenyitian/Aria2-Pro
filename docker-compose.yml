@@ -14,7 +14,6 @@ services:
       - DISK_CACHE=64M
       - IPV6_MODE=false
       - UPDATE_TRACKERS=true
-      - CUSTOM_TRACKER_URL=
       - TZ=Asia/Shanghai
     volumes:
       - config:/config
